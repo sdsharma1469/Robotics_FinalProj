@@ -8,18 +8,18 @@ This project implements a full nonlinear **hybrid position/force control framewo
 - Surface switching between intersecting constraint manifolds  
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
-assets/ ← Result figures 
+assets/ : Result figures 
 
-robot.m ← RR manipulator kinematics & dynamics
-tau_controller.m ← Computed-torque PID controller
-visualize_robot.m ← Visualization utilities
+robot.m : RR manipulator kinematics & dynamics
+tau_controller.m : Computed-torque PID controller
+visualize_robot.m : Visualization utilities
 
-simulation.m ← Part A: Nonlinear position control
-simulation_B.m ← Part B: Pure force control
-simulation_C.m ← Part C: Hybrid position/force control
-simulation_D.m ← Part D: Hybrid control with surface switching
+simulation.m : Nonlinear position control
+simulation_B.m : Pure force control
+simulation_C.m : Hybrid position/force control
+simulation_D.m : Hybrid control with surface switching
 
 
 ---
