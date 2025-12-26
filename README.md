@@ -13,12 +13,17 @@ This project implements a full nonlinear **hybrid position/force control framewo
 assets/ : Result figures 
 
 robot.m : RR manipulator kinematics & dynamics
+
 tau_controller.m : Computed-torque PID controller
+
 visualize_robot.m : Visualization utilities
 
 simulation.m : Nonlinear position control
+
 simulation_B.m : Pure force control
+
 simulation_C.m : Hybrid position/force control
+
 simulation_D.m : Hybrid control with surface switching
 
 
