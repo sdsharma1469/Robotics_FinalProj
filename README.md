@@ -1,28 +1,16 @@
-# 🦾 Nonlinear Hybrid Force/Position Control of a 2-DOF RR Manipulator
-
-**Course:** MECH / ECEN 338 – Robotics II  
-**Project Type:** Individual Final Project  
-**Language:** MATLAB  
-**Focus:** Nonlinear hybrid position–force control, surface switching, and manipulator dynamics
-
+# Nonlinear Hybrid Force/Position Control of a 2-DOF RR Manipulator
 ---
-
-## 📌 Overview
-
+## Overview
 This project implements a full nonlinear **hybrid position/force control framework** for a planar 2-DOF RR manipulator interacting with stiff environmental constraints (walls). The controller integrates:
-
-- Computed-torque nonlinear position control  
-- Environment-modeled force control  
+- nonlinear position control  
+- force control  
 - Tangential trajectory generation  
 - Surface switching between intersecting constraint manifolds  
-
-The system demonstrates robust manipulation under contact, including force regulation, hybrid trajectory tracking, and multi-surface transitions.
-
 ---
 
 ## 📁 Repository Structure
 
-assets/ ← Result figures and snapshots
+assets/ ← Result figures 
 
 robot.m ← RR manipulator kinematics & dynamics
 tau_controller.m ← Computed-torque PID controller
@@ -36,7 +24,7 @@ simulation_D.m ← Part D: Hybrid control with surface switching
 
 ---
 
-## 🧪 Simulation Modules
+## Simulation Modules
 
 ---
 
@@ -52,7 +40,7 @@ x + y = 2
 oscillating between:
 
 \[
-[1.5, 0.5] \leftrightarrow [0.5, 1.5]
+[1.5, 0.5],[0.5, 1.5]
 \]
 
 This verifies nonlinear computed-torque tracking in free-space before introducing contact.
@@ -67,7 +55,7 @@ This verifies nonlinear computed-torque tracking in free-space before introducin
 ### 🅑 Pure Force Control  
 **File:** `simulation_B.m`
 
-Implements force regulation normal to the wall using a compliant environment model:
+Implements force regulation normal to the wall
 
 - Wall modeled as stiff spring (K = 1000)  
 - Desired force: **10 units**  
@@ -88,7 +76,6 @@ Demonstrates stable force convergence during contact.
 Combines:
 
 - Force regulation normal to the wall  
-- Min-jerk trajectory tracking tangential to the wall  
 
 The manipulator slides along the wall while maintaining constant contact force.
 
@@ -105,7 +92,6 @@ The manipulator slides along the wall while maintaining constant contact force.
 Adds a second intersecting wall. The robot:
 
 - Traverses Wall 1  
-- Detects the corner  
 - Switches constraint frames  
 - Continues motion along Wall 2 while maintaining force control  
 
