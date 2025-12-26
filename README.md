@@ -28,7 +28,7 @@ simulation_D.m : Hybrid control with surface switching
 
 ---
 
-### 🅐 Nonlinear Position Control  
+### Nonlinear Position Control  
 **File:** `simulation.m`
 
 The end-effector follows a sinusoidal trajectory along the wall line:
@@ -52,7 +52,7 @@ This verifies nonlinear computed-torque tracking in free-space before introducin
 
 ---
 
-### 🅑 Pure Force Control  
+### Pure Force Control  
 **File:** `simulation_B.m`
 
 Implements force regulation normal to the wall
@@ -70,7 +70,7 @@ Demonstrates stable force convergence during contact.
 
 ---
 
-### 🅒 Hybrid Position–Force Control  
+### Hybrid Position–Force Control  
 **File:** `simulation_C.m`
 
 Combines:
@@ -86,7 +86,7 @@ The manipulator slides along the wall while maintaining constant contact force.
 
 ---
 
-### 🅓 Hybrid Control with Surface Switching  
+### Hybrid Control with Surface Switching  
 **File:** `simulation_D.m`
 
 Adds a second intersecting wall. The robot:
